@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Layout으로 버튼을 박스안 중앙에 위치 하게 하기</title>
+    <style>
+        button {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        #container {
+            width: 200px;
+            margin : 10px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 150px;
+            border: 1px solid gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button>버튼 1</button>
+        <button>버튼 2</button>
+    </div>
+</body>
+</html>
